@@ -1,10 +1,7 @@
 import React from "react";
 
 function Cards (props) {
-    let colors = ['Red', 'Green', 'Blue', 'Orange']
-    let color_str = colors.map( co => {
-        return co
-    })
+    
     return (
         <div className="card">
             <img className="card-img" src={props.image} alt=""></img>
@@ -17,7 +14,7 @@ function Cards (props) {
             <p>{props.title}</p>
             <p><span className="bold">From $ {props.price} </span>/ per person</p>
 
-            <h3>{color_str}</h3>
+            
         </div>
     )
 }
